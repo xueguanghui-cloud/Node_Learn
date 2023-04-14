@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>客户端网站</h1>
+
+  <script>
+    // 在浏览器中通过js这是cookie（在开发中很少使用）
+    // 在没有设置max-age时，是一个内存cookie，浏览器关闭时就会清除
+    // 设置max-age时，是一个硬盘cookie，只能等待过期时间达到的时候，才会销毁
+    document.cookie = 'name=codexgh;max-age=30;'
+    document.cookie = 'age=19;max-age=60;'
+  </script>
+
+</body>
+
+</html>
